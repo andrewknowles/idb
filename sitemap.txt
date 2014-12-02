@@ -1,0 +1,46 @@
+Dashboard
+
+  --Parts
+    ---Quick Status
+      Parts on Wait
+      Parts on Requisition
+      Parts on PO
+      Parts on Transfer
+      Picking in Progress
+      Picking not Delivered
+      Delivery in Progress
+      Delivery not Invoiced
+      Invoices not Printed
+      Invoices not Integrated
+      PO Outstanding
+      Receipts in Progress
+      Receipts not Integrated
+      PO Invoice in Progress
+      PO Invoice not Integrated
+    ---Control Reports
+      Delivered Not Invoiced
+      Invoiced Not Printed
+      Invoiced not Integrated
+      Receipt Not Integrated
+      Discount Changes
+      Price Changes
+      Lost Sales
+      Quotes Outstanding
+      Quotes Refused
+      Credit Notes Issued
+    ---Month End/WIP
+      Check for delivered parts not invoiced on closed segments
+    ---Stocks
+      Parts Stock by Manufacturer and Branch
+      Parts Overstock
+    ---Sales
+      Parts Margin
+    ---Purchase  
+  --Service
+  
+  --Unit Sales
+  
+  --Finance
+  
+  --General
+    ---Query Editor

@@ -1,0 +1,243 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	font-family: Arial, Helvetica, Verdana, Sans-serif;
+	font-size: 12px;
+	color: #666666;
+	background: #CFCFCF;
+}
+
+/*.hidden {
+	display: none;
+}*/
+
+/*#page-container {
+	width: auto;
+	margin: auto;	
+} */
+
+/* Main Navigation */
+
+#main-nav { height: 50px;
+background: #CFCFCF;
+  }
+#main-nav dl { margin: 0; padding: 0; }
+
+
+
+/* IE5 Mac Hack \*/ 
+#main-nav { padding-left: 11px; } 
+/*/ 
+#main-nav { padding-left: 11px; overflow: hidden; } 
+/* End Hack */
+
+#main-nav dt { float: left; }
+
+#main-nav dt a {
+	display: block;
+	height: 0px !important;
+	height /**/:50px; /* IE 5/Win hack */ 
+	padding: 50px 0 0 0;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+
+#main-nav dt a:hover {
+	background-position: 0 -50px;
+}
+
+#main-nav dt#about,
+#main-nav dt#about a { width: 71px; background-image: url(../images/about.gif); }
+
+#main-nav dt#services,
+#main-nav dt#services a { width: 84px; background-image: url(../images/services.gif); }
+
+#main-nav dt#portfolio,
+#main-nav dt#portfolio a { width: 95px; background-image: url(../images/portfolio.gif); }
+
+#main-nav dt#contact,
+#main-nav dt#contact a { width: 106px; background-image: url(../images/contact.gif); }
+
+body.about dt#about,
+body.about dt#about a,
+body.services dt#services,
+body.services dt#services a,
+body.portfolio dt#portfolio,
+body.portfolio dt#portfolio a,
+body.contact dt#contact,
+body.contact dt#contact a {
+	background-position: 0 -100px;
+}
+	
+
+#header {
+	height: 150px;
+	background: #db6d16
+	            url(../images/header.jpg);
+}
+
+#sidebar-a {
+	float: left;
+	width: 75px;
+	line-height: 18px;
+	font-family: Tahoma, Arial, Helvetica, Sans-serif;
+	font-size: 12px;
+	align: center
+}
+
+#sidebar-a .padding {
+	padding: 25px;
+}
+
+#sidebar-a button {
+  width: 200;
+  height: 200;
+  color:#08233e;
+  font:2.4em Futura, ‘Century Gothic’, AppleGothic, sans-serif;
+  font-size:70%;
+  padding:14px;
+  background:url(images/gohome.png) repeat-x center #ffcc00;
+  background-color:#FFCC66;
+  border:1px solid #ffcc00;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border-radius:10px;
+  border-bottom:1px solid #9f9f9f;
+  -moz-box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);
+  -webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);
+  cursor:pointer;
+ }
+ .button:hover {
+  background-color:rgba(255,204,0,0.8);
+ }
+
+#content {
+	margin-right: 280px;
+	line-height: 18px;
+}
+
+#content .padding {
+	padding: 25px;
+}
+
+#footer {
+	clear: both;
+	font-family: Tahoma, Arial, Helvetica, Sans-serif;
+	font-size: 10px;
+	color: #CC6600;
+	border-top: 1px solid #efefef;
+	padding: 13px 25px;
+	line-height: 18px;
+}
+
+#footer a {
+	color: #CC6600;;
+	text-decoration: none;
+}
+
+#footer a:hover {
+	color: #db6d16;
+}
+
+#footer #altnav {
+	width: 350px;
+	float: right;
+	text-align: right;
+}
+
+#header h1 {
+	margin: 0;
+	padding: 0;
+	float: right;
+	margin-top: 57px;
+	padding-right: 31px;
+}
+
+h1 {
+	text-align:center;
+}
+
+h2 {
+	text-align:center;
+	color: red;
+}
+
+
+
+#page-container table, th, td {
+    margin: 0px auto; /* or margin: 0 auto 0 auto */
+    border: 1px solid black;
+    border-collapse: collapse; 
+  }
+
+#page-container table { 
+	width: 80%;
+	margin: 0px auto;
+}
+	
+	
+#page-container tr.alt td {
+color: #000000;
+    background-color: #EAF2D3;
+}
+
+tr.alt td {
+color: #000000;
+    background-color: #EAF2D3;
+}
+
+#page-container th {
+background-color: #FFCC66;
+    color: #CC6600;
+    font-size: 20px;
+}
+
+#page-container td {
+text-align: center;
+font-size: 15px;
+padding: 12px;
+}
+
+#page-container form {
+	width: 10%;
+	border: 1;
+	margin: 0px auto;
+	}
+	
+select {
+    background: #FFCC66;
+    color:#CC6600;
+    align:center;
+}
+
+select option {
+    background: #FFCC66;
+    color:#CC6600;
+}
+	
+#reporttable table, th, tr, td {
+	margin: 0px auto;
+	border-collapse: collapse;
+	font-size: 15px;
+	padding: 20px;
+}
+
+#content h2 {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 15px;
+}
+
+#content p {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 15px;
+}
+
+.verticalLine {
+    border-left: thick solid #ff0000;
+}

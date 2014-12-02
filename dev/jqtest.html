@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript">
+function fnExcelReport()
+{
+
+    var tab_text="<table><tr>";
+    var textRange;
+    tab = document.getElementById('TableData'); // id of actual table on your page
+
+    for(j = 0 ; j < tab.rows.length ; j++) 
+    {   
+        tab_text=tab_text+tab.rows[j].innerHTML;
+        tab_text=tab_text+"</tr><tr>";
+    }
+
+    tab_text = tab_text+"</tr></table>";
+
+    var txt = document.getElementById('txtArea1').contentWindow;
+    txt.document.open("txt/html","replace");
+
+    txt.document.write(tab_text);
+    txt.document.close();
+    txt.focus();
+    tb = txt.document.execCommand("SaveAs",true,"Say Thanks to Sumit.xls");
+    return (tb);
+}
+</script>-->
+<script type="text/javascript">
+function ExportToExcel(mytblId){
+       var htmltable= document.getElementById('TableData');
+       var html = htmltable.outerHTML;
+       window.open('data:application/vnd.ms-excel,' + encodeURIComponent(html));
+    }
+</script>
+</head>
+<body>
+<table id = 'TableData'>
+<tr>
+
+<td>AA</td><td>BB</td>
+</tr>
+</table>
+<!--  <button id="btnExport" onclick="fnExcelReport();"> EXPORT -->
+ <button id="btnExport" onclick="ExportToExcel('TableData');"> EXPORT
+</button>
+</body>
+</html>
+
+<!--function fnExcelReport()
+{
+
+    var tab_text="<table><tr>";
+    var textRange;
+    tab = document.getElementById('TableData'); // id of actual table on your page
+
+    for(j = 0 ; j < tab.rows.length ; j++) 
+    {   
+        tab_text=tab_text+tab.rows[j].innerHTML;
+        tab_text=tab_text+"</tr><tr>";
+    }
+
+    tab_text = tab_text+"</tr></table>";
+
+    var txt = document.getElementById('txtArea1').contentWindow;
+    txt.document.open("txt/html","replace");
+
+    txt.document.write(tab_text);
+    txt.document.close();
+    txt.focus();
+    tb = txt.document.execCommand("SaveAs",true,"Say Thanks to Sumit.xls");
+    return (tb);
+}
+
+function fnExcelReport()
+{
+
+    var tab_text="<table><tr>";
+    var textRange;
+    tab = document.getElementById('TableData'); // id of actual table on your page
+
+    for(j = 0 ; j < tab.rows.length ; j++) 
+    {   
+        tab_text=tab_text+tab.rows[j].innerHTML;
+        tab_text=tab_text+"</tr><tr>";
+    }
+
+    tab_text = tab_text+"</tr></table>";
+
+    var txt = document.getElementById('txtArea1').contentWindow;
+    txt.document.open("txt/html","replace");
+
+    txt.document.write(tab_text);
+    txt.document.close();
+    txt.focus();
+    tb = txt.document.execCommand("SaveAs",true,"Say Thanks to Sumit.xls");
+    return (tb);
+}
+Just Create a blank iframe
+
+<iframe id="txtArea1" style="display:none"></iframe>
+Call this function on
+
+<button id="btnExport" onclick="fnExcelReport();"> EXPORT 
+</button>
+
+-->
